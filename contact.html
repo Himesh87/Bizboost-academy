@@ -1,0 +1,2386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & FAQ — BizBoost Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-chart-line"></i>
+        <span>BizBoost<strong>Academy</strong></span>
+      </a>
+
+      <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="simulator.html">Growth Simulator</a></li>
+          <li><a href="contact.html" class="active">Contact & FAQ</a></li>
+        </ul>
+        <div class="nav-auth" id="navAuthArea">
+          <a href="login.html" class="btn btn-outline">Login</a>
+          <a href="register.html" class="btn btn-primary">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Title Banner -->
+  <section class="page-title-banner">
+    <div class="container text-center">
+      <h1>Get in Touch & Learn More</h1>
+      <p>Have inquiries about our small business curriculum? We are here to support your growth.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Form Card -->
+        <div class="contact-form-card">
+          <h2>Send Us a Message</h2>
+          <p class="text-muted">Fill out the quick form below and our mentor team will reach out.</p>
+
+          <div id="contactAlert" class="alert-box" style="display: none;"></div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="contactName">Your Name *</label>
+              <input type="text" id="contactName" placeholder="e.g. Yash Patil" required>
+              <small class="error-msg" id="contactNameError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Your Email *</label>
+              <input type="email" id="contactEmail" placeholder="yash@example.com" required>
+              <small class="error-msg" id="contactEmailError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="contactBiz">Business Name (Optional)</label>
+              <input type="text" id="contactBiz" placeholder="e.g. Patil Sound & Electronics">
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Your Message *</label>
+              <textarea id="contactMessage" rows="4" placeholder="How can BizBoost help your enterprise grow?" required></textarea>
+              <small class="error-msg" id="contactMessageError"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-large btn-block">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Information Side -->
+        <div class="contact-info-col">
+          <div class="info-tile">
+            <div class="tile-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+            <div>
+              <h4>Official Email</h4>
+              <p>support@bizboostacademy.com</p>
+              <small class="text-muted">Inquiries answered within 24 hours</small>
+            </div>
+          </div>
+
+          <div class="info-tile">
+            <div class="tile-icon"><i class="fa-solid fa-phone-volume"></i></div>
+            <div>
+              <h4>Phone Support</h4>
+              <p>+91 98765 43210</p>
+              <small class="text-muted">Mon–Fri: 9:00 AM – 6:00 PM IST</small>
+            </div>
+          </div>
+
+          <div class="info-tile">
+            <div class="tile-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div>
+              <h4>Project Center</h4>
+              <p>Department of Information Technology & Management</p>
+              <small class="text-muted">Mumbai, Maharashtra, India</small>
+            </div>
+          </div>
+
+          <div class="card bg-accent-soft">
+            <h4><i class="fa-solid fa-bullhorn"></i> Looking for Instant Help?</h4>
+            <p style="margin-top: 6px;">
+              You can test the <strong>Growth Simulator</strong> instantly without needing manual counselor approval.
+            </p>
+            <a href="simulator.html" class="btn btn-outline btn-sm" style="margin-top: 10px;">Launch Simulator</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section class="section bg-light">
+    <div class="container faq-container">
+      <div class="section-heading text-center">
+        <h2>Frequently Asked Questions</h2>
+        <p>Clear answers to common questions about BizBoost Academy.</p>
+      </div>
+
+      <div class="accordion">
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Is this digital marketing training free?</span>
+            <i class="fa-solid fa-chevron-down acc-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Yes! BizBoost Academy was developed as a college demonstration platform to show how intuitive digital marketing education can be delivered free of cost to local merchants.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Who can use the platform?</span>
+            <i class="fa-solid fa-chevron-down acc-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Any retailer, boutique owner, restaurant manager, freelancer, or small enterprise founder wanting to understand how to leverage WhatsApp, Instagram, and local search to win customers.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Do I need prior marketing or technical experience?</span>
+            <i class="fa-solid fa-chevron-down acc-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p>No prior marketing or technical knowledge is needed. All terms are explained in straightforward language, using relatable real-world business scenarios instead of complex corporate terms.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Can absolute beginners use the platform?</span>
+            <i class="fa-solid fa-chevron-down acc-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Yes, the curriculum starts from step zero: creating accounts, understanding customer profiles, and setting up business profiles before gradually moving on to paid promotions.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="brand-logo">
+          <i class="fa-solid fa-chart-line"></i>
+          <span>BizBoost<strong>Academy</strong></span>
+        </div>
+        <p class="footer-desc">Practical digital marketing education for local entrepreneurs.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="simulator.html">Growth Simulator</a></li>
+          <li><a href="contact.html">Contact & FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Local Demo</h4>
+        <p>Demo: demo@bizboost.com</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-bottom:10px"><a href="privacy.html" class="inline-link">Privacy</a> &nbsp; <a href="terms.html" class="inline-link">Terms</a></div>
+    <div class="footer-bottom text-center">
+      <p>&copy; BizBoost Academy. Designed for Academic Demonstration.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+/* ===================================================
+   BizBoost Academy — Modern Responsive Stylesheet
+   Color Palette: Deep Blue / Purple, Bright Cyan/Teal Accent, Crisp White
+   =================================================== */
+
+:root {
+  --primary: #1e1b4b;       /* Deep Indigo Blue */
+  --primary-light: #312e81; /* Medium Indigo */
+  --accent: #0ea5e9;        /* Bright Sky Cyan Accent */
+  --accent-hover: #0284c7;
+  --accent-soft: #e0f2fe;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --bg-light: #f8fafc;
+  --card-bg: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 16px 36px rgba(15, 23, 42, 0.12);
+  --transition: all 0.25s ease-in-out;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #ffffff;
+  color: var(--text-main);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utility Containers & Typography */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-center { text-align: center; }
+.text-muted { color: var(--text-muted); }
+.bg-light { background-color: var(--bg-light); }
+
+.section {
+  padding: 70px 0;
+}
+
+.section-heading {
+  margin-bottom: 45px;
+}
+
+.section-heading h2 {
+  font-size: 2.2rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.section-heading p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--accent-soft);
+  color: var(--accent-hover);
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 50px;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+.badge-warning { background: #fef3c7; color: #b45309; }
+.badge-success { background: #d1fae5; color: #047857; }
+.badge-info { background: #e0e7ff; color: #4338ca; }
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.btn-large {
+  padding: 14px 28px;
+  font-size: 1.05rem;
+}
+
+.btn-sm {
+  padding: 6px 14px;
+  font-size: 0.85rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background-color: var(--primary-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+.btn-accent:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-outline {
+  border-color: var(--border-color);
+  background: #ffffff;
+  color: var(--primary);
+}
+.btn-outline:hover {
+  border-color: var(--primary);
+  background: var(--bg-light);
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  background: transparent;
+}
+.btn-outline-light:hover {
+  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.inline-link {
+  color: var(--accent);
+  font-weight: 600;
+}
+.inline-link:hover {
+  text-decoration: underline;
+}
+
+/* Header & Navigation */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.brand-logo i {
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a {
+  font-weight: 500;
+  color: var(--text-main);
+  padding: 6px 0;
+  position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent);
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+}
+
+.nav-auth {
+  display: flex;
+  gap: 12px;
+}
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary) 0%, #1e1b4b 60%, #0f172a 100%);
+  color: #ffffff;
+  padding: 90px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Hero Graphical Mockup Card */
+.mockup-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.mockup-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+}
+
+.mockup-header .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.dot.red { background: #ef4444; }
+.dot.yellow { background: #f59e0b; }
+.dot.green { background: #10b981; }
+
+.mockup-title {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  margin-left: 10px;
+}
+
+.mockup-stat {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.mockup-stat h4 {
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.mockup-stat p {
+  font-size: 0.85rem;
+  color: #38bdf8;
+}
+
+.mockup-pill-bar {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.mockup-pill-bar .pill {
+  flex: 1;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 6px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.mockup-pill-bar .pill.active {
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Stats Section */
+.stats-section {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  padding: 40px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 20px;
+  border-radius: var(--radius-md);
+  background: var(--bg-light);
+  border: 1px solid var(--border-color);
+}
+
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.info-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 28px 22px;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+
+.card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+}
+
+.info-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.info-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* How It Works Steps */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.step-item {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 35px 25px;
+  text-align: center;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+}
+
+.step-badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 auto 20px;
+}
+
+.step-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.step-item p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Call to Action */
+.cta-section {
+  background: linear-gradient(135deg, var(--primary-light), var(--primary));
+  color: #ffffff;
+}
+
+.cta-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 25px;
+}
+
+/* Auth Pages (Login & Register) */
+.auth-body {
+  background-color: var(--bg-light);
+  min-height: 100vh;
+}
+
+.auth-wrapper {
+  padding: 40px 15px 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 35px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: var(--shadow-md);
+}
+
+.auth-card-wide {
+  max-width: 650px;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.auth-header h2 {
+  color: var(--primary);
+  font-size: 1.7rem;
+  margin-bottom: 6px;
+}
+
+.auth-header p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.auth-footer a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text-main);
+}
+
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-with-icon i {
+  position: absolute;
+  left: 14px;
+  color: #94a3b8;
+}
+
+.input-with-icon input {
+  padding-left: 42px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  background-color: #ffffff;
+  transition: var(--transition);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.15);
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-row-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  font-size: 0.85rem;
+}
+
+.checkbox-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+.error-msg {
+  display: block;
+  color: var(--danger);
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.alert-box {
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.alert-danger {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.alert-success {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+/* Dashboard Specific Layout */
+.dashboard-body {
+  background-color: var(--bg-light);
+  min-height: 100vh;
+}
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.dashboard-sidebar {
+  width: 250px;
+  background: var(--primary);
+  color: #ffffff;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.sidebar-brand {
+  padding: 0 24px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-brand .brand-logo {
+  color: #ffffff;
+}
+
+.sidebar-nav {
+  padding-top: 20px;
+}
+
+.sidebar-nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.sidebar-nav ul li a:hover,
+.sidebar-nav ul li a.active {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border-left: 4px solid var(--accent);
+}
+
+.sidebar-nav ul li a.logout-btn {
+  color: #f87171;
+  margin-top: 30px;
+}
+.sidebar-nav ul li a.logout-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: #fca5a5;
+}
+
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.dashboard-topbar {
+  background: #ffffff;
+  padding: 18px 30px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-content {
+  padding: 30px;
+  flex: 1;
+}
+
+#sidebarToggleBtn {
+  display: none;
+}
+
+/* Stat Cards (Dashboard Variant) */
+.stat-card-alt {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.stat-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.stat-icon-mini {
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.stat-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* Progress Bars */
+.progress-bar-bg {
+  width: 100%;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+/* Task Card */
+.task-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-left: 5px solid var(--warning);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.task-left {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.task-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fef3c7;
+  color: #d97706;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.dash-section {
+  margin-top: 35px;
+}
+
+.section-subheading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.course-mini-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.course-mini-header h4 {
+  margin: 8px 0 6px;
+  color: var(--primary);
+}
+
+.course-mini-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.course-mini-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.tools-teaser-banner {
+  background: linear-gradient(135deg, var(--primary) 0%, #312e81 100%);
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 24px 30px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Courses Page */
+.page-title-banner {
+  background: var(--bg-light);
+  padding: 50px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-title-banner h1 {
+  font-size: 2.2rem;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.course-list-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.course-item-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.course-tag-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.course-item-info h2 {
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.course-item-info p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+}
+
+.lesson-checklist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.lesson-checklist li {
+  font-size: 0.88rem;
+  color: #475569;
+}
+
+.lesson-checklist li i {
+  color: var(--success);
+  margin-right: 6px;
+}
+
+.course-item-action {
+  background: var(--bg-light);
+  padding: 20px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.progress-text-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.course-item-action button {
+  margin-top: 15px;
+}
+
+/* Tools Section (In Courses page) */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 26px;
+}
+
+.tool-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 26px;
+  box-shadow: var(--shadow-sm);
+}
+
+.tool-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.tool-icon {
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+
+.tool-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.tool-result-box {
+  background: var(--bg-light);
+  border: 1px dashed var(--accent);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  margin-top: 18px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.tool-ol {
+  padding-left: 20px;
+}
+
+.tool-ol li {
+  margin-bottom: 6px;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag-pill {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  padding: 4px 10px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  color: var(--accent-hover);
+  font-weight: 600;
+}
+
+/* Growth Simulator Page */
+.simulator-container {
+  max-width: 900px;
+}
+
+.simulator-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 35px;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 40px;
+}
+
+.simulator-card-header {
+  margin-bottom: 25px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 15px;
+}
+
+.simulator-card-header h2 {
+  color: var(--primary);
+}
+
+.simulator-result-wrap {
+  margin-top: 30px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.results-header-box {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 30px;
+}
+
+.score-card-layout {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.score-circle-outer {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.score-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 60%, var(--accent-soft) 100%);
+  border: 6px solid var(--accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(14, 165, 233, 0.2);
+}
+
+.score-number {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.score-out {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.score-disclaimer {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.plan-timeline {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 35px;
+  box-shadow: var(--shadow-sm);
+}
+
+.plan-timeline-title {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.week-card {
+  position: relative;
+  padding: 20px 20px 20px 24px;
+  border-left: 3px solid var(--accent);
+  background: var(--bg-light);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-bottom: 20px;
+}
+
+.week-pill {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: var(--primary);
+  color: #ffffff;
+  padding: 2px 10px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.week-card h3 {
+  font-size: 1.15rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.plan-checklist li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #334155;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.plan-checklist li::before {
+  content: "✔";
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* Contact Page */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+}
+
+.contact-form-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 35px;
+  box-shadow: var(--shadow-sm);
+}
+
+.info-tile {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.tile-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.bg-accent-soft {
+  background: var(--accent-soft);
+  padding: 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid #bae6fd;
+}
+
+/* Accordion */
+.faq-container {
+  max-width: 800px;
+}
+
+.accordion-item {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 18px 20px;
+  text-align: left;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.accordion-header .acc-icon {
+  transition: transform 0.3s ease;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.accordion-header.active .acc-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.accordion-content.open {
+  padding: 0 20px 18px 20px;
+  max-height: 250px;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--primary);
+  color: #94a3b8;
+  padding: 60px 0 25px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-col .brand-logo {
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.footer-col h4 {
+  color: #ffffff;
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-desc {
+  max-width: 320px;
+  font-size: 0.9rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  font-size: 0.85rem;
+}
+
+/* ===================================================
+   Responsive Media Queries (Mobile & Tablet)
+   =================================================== */
+
+@media (max-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+  .course-item-card {
+    grid-template-columns: 1fr;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    display: none;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .nav-auth {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 16px;
+  }
+
+  .dashboard-sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    height: 100vh;
+    z-index: 1100;
+  }
+
+  .dashboard-sidebar.active {
+    left: 0;
+  }
+
+  #sidebarToggleBtn {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  .dashboard-topbar {
+    padding: 15px 20px;
+  }
+
+  .dashboard-content {
+    padding: 20px 15px;
+  }
+
+  .score-card-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .task-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .tools-teaser-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+}
+
+/* ===================================================
+   Print Stylesheet (For Growth Action Plan)
+   =================================================== */
+
+@media print {
+  body {
+    background: #ffffff;
+    color: #000000;
+    font-size: 12pt;
+  }
+  .site-header,
+  .site-footer,
+  .no-print,
+  .btn,
+  .mobile-toggle {
+    display: none !important;
+  }
+  .simulator-container {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .printable-card {
+    border: 1px solid #666666 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+    margin-bottom: 20px;
+  }
+  .week-card {
+    border-left: 2pt solid #000000 !important;
+    background: #ffffff !important;
+    page-break-inside: avoid;
+  }
+}
+/* ===================================================
+   BizBoost Academy — Main JavaScript Logic
+   Pure Vanilla JS with localStorage state persistence
+   =================================================== */
+
+// Global constant keys for localStorage
+const STORAGE_KEYS = {
+  USER: "bizboost_active_user",
+  ALL_USERS: "bizboost_registered_users",
+  COURSES: "bizboost_course_progress",
+  TASK_DONE: "bizboost_daily_task_done",
+  SAVED_PLAN: "bizboost_saved_growth_plan"
+};
+
+// Default Demo User credentials
+const DEMO_USER = {
+  fullName: "Demo Business Owner",
+  bizName: "Demo Organics & Mart",
+  email: "demo@bizboost.com",
+  password: "123456",
+  category: "Retail",
+  experience: "Beginner"
+};
+
+// Initialize foundational data once DOM is loaded
+document.addEventListener("DOMContentLoaded", () => {
+  setupMobileNavigation();
+  updateAuthNavigation();
+  initLoginFlow();
+  initRegisterFlow();
+  initDashboard();
+  initCoursesProgress();
+  initGrowthSimulator();
+  initMarketingMiniTools();
+  initFaqAccordion();
+  initContactForm();
+});
+
+/* ---------------------------------------------------
+   1. Mobile Navigation & Header Helpers
+   --------------------------------------------------- */
+function setupMobileNavigation() {
+  const menuBtn = document.getElementById("mobileMenuBtn");
+  const navMenu = document.getElementById("navMenu");
+
+  if (menuBtn && navMenu) {
+    menuBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("open");
+    });
+  }
+
+  // Sidebar toggle for dashboard (mobile view)
+  const sidebarToggleBtn = document.getElementById("sidebarToggleBtn");
+  const dashboardSidebar = document.getElementById("dashboardSidebar");
+
+  if (sidebarToggleBtn && dashboardSidebar) {
+    sidebarToggleBtn.addEventListener("click", () => {
+      dashboardSidebar.classList.toggle("active");
+    });
+  }
+}
+
+function getActiveUser() {
+  const userJson = localStorage.getItem(STORAGE_KEYS.USER);
+  return userJson ? JSON.parse(userJson) : null;
+}
+
+function updateAuthNavigation() {
+  const navAuthArea = document.getElementById("navAuthArea");
+  if (!navAuthArea) return;
+
+  const user = getActiveUser();
+  if (user) {
+    navAuthArea.innerHTML = `
+      <a href="dashboard.html" class="btn btn-outline"><i class="fa-solid fa-gauge"></i> ${escapeHtml(user.fullName.split(" ")[0])}</a>
+      <button class="btn btn-primary" onclick="handleLogout()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button>
+    `;
+  }
+}
+
+function handleLogout() {
+  localStorage.removeItem(STORAGE_KEYS.USER);
+  window.location.href = "login.html";
+}
+
+/* ---------------------------------------------------
+   2. Authentication Logic (Login & Register)
+   --------------------------------------------------- */
+function initLoginFlow() {
+  const loginForm = document.getElementById("loginForm");
+  const demoBtn = document.getElementById("demoUserBtn");
+
+  if (demoBtn) {
+    demoBtn.addEventListener("click", () => {
+      // Auto-fill demo credentials
+      document.getElementById("loginEmail").value = DEMO_USER.email;
+      document.getElementById("loginPassword").value = DEMO_USER.password;
+      loginUser(DEMO_USER.email, DEMO_USER.password);
+    });
+  }
+
+  if (loginForm) {
+    loginForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = document.getElementById("loginEmail").value.trim();
+      const password = document.getElementById("loginPassword").value.trim();
+      const emailErr = document.getElementById("loginEmailError");
+      const passErr = document.getElementById("loginPasswordError");
+
+      // Simple validation
+      let hasError = false;
+      emailErr.textContent = "";
+      passErr.textContent = "";
+
+      if (!email || !email.includes("@")) {
+        emailErr.textContent = "Please enter a valid email address.";
+        hasError = true;
+      }
+      if (!password || password.length < 5) {
+        passErr.textContent = "Password must be at least 5 characters.";
+        hasError = true;
+      }
+
+      if (!hasError) {
+        loginUser(email, password);
+      }
+    });
+  }
+}
+
+function loginUser(email, password) {
+  const alertBox = document.getElementById("loginAlert");
+
+  // Check Demo User First
+  if (email.toLowerCase() === DEMO_USER.email.toLowerCase() && password === DEMO_USER.password) {
+    localStorage.setItem(STORAGE_KEYS.USER, JSON.stringify(DEMO_USER));
+    showAlert(alertBox, "Login successful! Redirecting...", "alert-success");
+    setTimeout(() => { window.location.href = "dashboard.html"; }, 800);
+    return;
+  }
+
+  // Check LocalStorage registered users
+  const existingUsers = JSON.parse(localStorage.getItem(STORAGE_KEYS.ALL_USERS) || "[]");
+  const matchedUser = existingUsers.find(u => u.email.toLowerCase() === email.toLowerCase() && u.password === password);
+
+  if (matchedUser) {
+    localStorage.setItem(STORAGE_KEYS.USER, JSON.stringify(matchedUser));
+    showAlert(alertBox, "Welcome back! Redirecting...", "alert-success");
+    setTimeout(() => { window.location.href = "dashboard.html"; }, 800);
+  } else {
+    showAlert(alertBox, "Invalid credentials. Use demo@bizboost.com / 123456 or register a new account.", "alert-danger");
+  }
+}
+
+function initRegisterFlow() {
+  const regForm = document.getElementById("registerForm");
+  if (!regForm) return;
+
+  regForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const alertBox = document.getElementById("registerAlert");
+
+    const fullName = document.getElementById("regFullName").value.trim();
+    const bizName = document.getElementById("regBizName").value.trim();
+    const email = document.getElementById("regEmail").value.trim();
+    const password = document.getElementById("regPassword").value.trim();
+    const confirmPassword = document.getElementById("regConfirmPassword").value.trim();
+    const category = document.getElementById("regBizCategory").value;
+    const experience = document.getElementById("regExperience").value;
+
+    // Reset error fields
+    document.querySelectorAll(".error-msg").forEach(el => el.textContent = "");
+
+    let valid = true;
+    if (!fullName) {
+      document.getElementById("regFullNameError").textContent = "Full name is required.";
+      valid = false;
+    }
+    if (!bizName) {
+      document.getElementById("regBizNameError").textContent = "Business name is required.";
+      valid = false;
+    }
+    if (!email || !email.includes("@")) {
+      document.getElementById("regEmailError").textContent = "Valid email is required.";
+      valid = false;
+    }
+    if (!password || password.length < 6) {
+      document.getElementById("regPasswordError").textContent = "Password must be 6+ characters.";
+      valid = false;
+    }
+    if (password !== confirmPassword) {
+      document.getElementById("regConfirmPasswordError").textContent = "Passwords do not match.";
+      valid = false;
+    }
+    if (!category) {
+      document.getElementById("regBizCategoryError").textContent = "Please select a category.";
+      valid = false;
+    }
+    if (!experience) {
+      document.getElementById("regExperienceError").textContent = "Please select your experience.";
+      valid = false;
+    }
+
+    if (!valid) return;
+
+    // Save into localStorage list
+    const existingUsers = JSON.parse(localStorage.getItem(STORAGE_KEYS.ALL_USERS) || "[]");
+    const userExists = existingUsers.some(u => u.email.toLowerCase() === email.toLowerCase());
+
+    if (userExists) {
+      showAlert(alertBox, "This email is already registered. Please log in.", "alert-danger");
+      return;
+    }
+
+    const newUser = { fullName, bizName, email, password, category, experience };
+    existingUsers.push(newUser);
+    localStorage.setItem(STORAGE_KEYS.ALL_USERS, JSON.stringify(existingUsers));
+
+    showAlert(alertBox, "Registration successful! Redirecting to login...", "alert-success");
+    setTimeout(() => {
+      window.location.href = "login.html";
+    }, 1200);
+  });
+}
+
+function showAlert(element, text, className) {
+  if (!element) return;
+  element.textContent = text;
+  element.className = `alert-box ${className}`;
+  element.style.display = "block";
+}
+
+/* ---------------------------------------------------
+   3. Dashboard Logic
+   --------------------------------------------------- */
+function initDashboard() {
+  const dashWelcome = document.getElementById("dashWelcomeUser");
+  if (!dashWelcome) return;
+
+  // Protect route
+  const user = getActiveUser();
+  if (!user) {
+    window.location.href = "login.html";
+    return;
+  }
+
+  // Populate user data
+  dashWelcome.textContent = `Welcome back, ${user.fullName} 👋`;
+  const bizSub = document.getElementById("dashUserBizDetails");
+  if (bizSub) {
+    bizSub.textContent = `Managing ${user.bizName} • ${user.category || "General"} Sector • ${user.experience || "Beginner"} Level`;
+  }
+
+  // Bind logout
+  const logoutLink = document.getElementById("logoutLink");
+  if (logoutLink) {
+    logoutLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      handleLogout();
+    });
+  }
+
+  // Load progress metrics
+  updateDashboardMetrics();
+
+  // Daily task mark completed
+  const markTaskBtn = document.getElementById("markTaskCompletedBtn");
+  const taskCard = document.getElementById("taskCard");
+  const isTaskDone = localStorage.getItem(STORAGE_KEYS.TASK_DONE) === "true";
+
+  if (isTaskDone && markTaskBtn && taskCard) {
+    setTaskCompletedState(markTaskBtn, taskCard);
+  }
+
+  if (markTaskBtn) {
+    markTaskBtn.addEventListener("click", () => {
+      localStorage.setItem(STORAGE_KEYS.TASK_DONE, "true");
+      setTaskCompletedState(markTaskBtn, taskCard);
+      // Give bonus score feedback
+      alert("🎉 Great Job! Today's practical marketing task has been recorded.");
+      updateDashboardMetrics();
+    });
+  }
+}
+
+function setTaskCompletedState(button, card) {
+  button.innerHTML = `<i class="fa-solid fa-circle-check"></i> Completed`;
+  button.disabled = true;
+  button.classList.remove("btn-accent");
+  button.classList.add("btn-outline");
+  card.style.opacity = "0.85";
+  card.style.borderLeftColor = "var(--success)";
+}
+
+function updateDashboardMetrics() {
+  const overallProgEl = document.getElementById("dashOverallProgress");
+  const overallBarEl = document.getElementById("dashOverallProgressBar");
+  const completedCountEl = document.getElementById("dashCompletedCount");
+  const scoreDisplayEl = document.getElementById("dashGrowthScoreDisplay");
+
+  const progressData = getStoredCourseProgress();
+  const totalLessons = 17; // c1:4 + c2:5 + c3:4 + c4:4
+  const completedLessons = progressData.c1 + progressData.c2 + progressData.c3 + progressData.c4;
+
+  const pct = Math.round((completedLessons / totalLessons) * 100);
+
+  if (overallProgEl) overallProgEl.textContent = `${pct}%`;
+  if (overallBarEl) overallBarEl.style.width = `${pct}%`;
+  if (completedCountEl) completedCountEl.textContent = `${completedLessons} / ${totalLessons}`;
+
+  // Read simulator score if stored, else fallback
+  const storedScore = localStorage.getItem("bizboost_last_score") || "74";
+  if (scoreDisplayEl) {
+    scoreDisplayEl.textContent = `${storedScore} / 100`;
+  }
+}
+
+/* ---------------------------------------------------
+   4. Course Learning & Progress Tracking
+   --------------------------------------------------- */
+const DEFAULT_COURSE_PROGRESS = {
+  c1: 3, // Digital Marketing Fundamentals (out of 4)
+  c2: 2, // Social Media Marketing (out of 5)
+  c3: 1, // WhatsApp Marketing (out of 4)
+  c4: 0  // Content Creation (out of 4)
+};
+
+const COURSE_TOTALS = { c1: 4, c2: 5, c3: 4, c4: 4 };
+
+function getStoredCourseProgress() {
+  const data = localStorage.getItem(STORAGE_KEYS.COURSES);
+  if (!data) {
+    localStorage.setItem(STORAGE_KEYS.COURSES, JSON.stringify(DEFAULT_COURSE_PROGRESS));
+    return { ...DEFAULT_COURSE_PROGRESS };
+  }
+  return JSON.parse(data);
+}
+
+function initCoursesProgress() {
+  renderCourseProgressBars();
+}
+
+function renderCourseProgressBars() {
+  const progress = getStoredCourseProgress();
+
+  for (let key in COURSE_TOTALS) {
+    const total = COURSE_TOTALS[key];
+    const current = progress[key] || 0;
+    const pct = Math.round((current / total) * 100);
+
+    const pctLabel = document.getElementById(`${key}-pct`);
+    const progressBar = document.getElementById(`${key}-bar`);
+
+    if (pctLabel) pctLabel.textContent = `${pct}%`;
+    if (progressBar) progressBar.style.width = `${pct}%`;
+  }
+}
+
+// Global scope for HTML button onclick handler
+window.toggleCourseProgress = function(courseId) {
+  const progress = getStoredCourseProgress();
+  const max = COURSE_TOTALS[courseId];
+
+  if (progress[courseId] < max) {
+    progress[courseId] += 1;
+    alert(`Progress updated! You have completed Lesson ${progress[courseId]} of ${max}.`);
+  } else {
+    // Reset to demo looping
+    progress[courseId] = 0;
+    alert(`Course completed and reset for review!`);
+  }
+
+  localStorage.setItem(STORAGE_KEYS.COURSES, JSON.stringify(progress));
+  renderCourseProgressBars();
+  updateDashboardMetrics();
+};
+
+/* ---------------------------------------------------
+   5. Business Growth Simulator (Interactive Algorithm)
+   --------------------------------------------------- */
+function initGrowthSimulator() {
+  const form = document.getElementById("growthSimulatorForm");
+  if (!form) return;
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const bizType = document.getElementById("simBizType").value;
+    const customers = parseInt(document.getElementById("simCustomers").value, 10) || 0;
+    const followers = parseInt(document.getElementById("simFollowers").value, 10) || 0;
+    const budget = parseInt(document.getElementById("simBudget").value, 10) || 0;
+    const presence = document.getElementById("simPresence").value;
+    const experience = document.getElementById("simExperience").value;
+    const goal = document.getElementById("simGoal").value;
+
+    // Calculate score (0 - 100)
+    let score = 30; // base score
+
+    if (followers > 500) score += 15;
+    else if (followers > 100) score += 10;
+    else score += 5;
+
+    if (customers > 200) score += 15;
+    else if (customers > 50) score += 10;
+    else score += 5;
+
+    if (budget >= 5000) score += 15;
+    else if (budget >= 1500) score += 10;
+    else score += 5;
+
+    if (presence === "Website + Social Media") score += 15;
+    else if (presence === "Instagram + Facebook") score += 10;
+    else if (presence === "Instagram only") score += 6;
+    else score += 2;
+
+    if (experience === "Advanced") score += 10;
+    else if (experience === "Intermediate") score += 7;
+    else score += 4;
+
+    // Normalizing between 35 and 95 for realistic demo
+    score = Math.min(Math.max(score, 38), 94);
+
+    // Save latest score in localStorage
+    localStorage.setItem("bizboost_last_score", score.toString());
+
+    // Render result
+    displaySimulatorResults(score, bizType, presence, experience, goal, budget);
+  });
+}
+
+function displaySimulatorResults(score, bizType, presence, experience, goal, budget) {
+  const resultWrap = document.getElementById("simulatorResultWrap");
+  const scoreNum = document.getElementById("growthScoreNum");
+  const summaryPara = document.getElementById("scoreSummaryPara");
+
+  if (!resultWrap || !scoreNum) return;
+
+  scoreNum.textContent = score;
+  summaryPara.innerHTML = `
+    Your <strong>${escapeHtml(bizType)}</strong> business scored <strong>${score}/100</strong>. 
+    With your target goal to <em>"${escapeHtml(goal)}"</em> and current setup (<em>${escapeHtml(presence)}</em>), 
+    we have tailored a structured 4-week roadmap to maximize your local market dominance.
+  `;
+
+  // Dynamic recommendations for Week 1 to 4
+  const week1 = [
+    `Audit and re-brand your ${presence.includes("Instagram") ? "Instagram Business profile" : "primary online page"} with high-resolution logos.`,
+    `Write a direct bio highlighting your business specialty in ${bizType}.`,
+    `Publish full address, operating hours, and a direct WhatsApp click-to-chat link.`,
+    `Upload 3 introductory showcase photos of bestselling items.`
+  ];
+
+  const week2 = [
+    `Draft 3 educational posts answering the top questions customers ask in ${bizType}.`,
+    `Record 2 unpolished, authentic mobile videos showcasing behind-the-scenes or product packaging.`,
+    `Design a simple Monday-to-Friday content rhythm so you never run out of concepts.`
+  ];
+
+  const week3 = [
+    `Set up a WhatsApp Business Product Catalog with accurate prices and descriptions.`,
+    `Engage daily: Spend 10 minutes replying to direct inquiries and thanking commenters.`,
+    `Offer a small digital voucher or loyalty stamp to in-store customers who mention your social pages.`
+  ];
+
+  const week4 = [
+    budget > 1000 
+      ? `Allocate ₹${Math.round(budget * 0.4)} toward a targeted geo-local Instagram post to reach customers within a 5 km radius.`
+      : `Host a collaborative giveaway or cross-promotion with another non-competing local vendor.`,
+    `Review which post earned the highest saves and inquiries to replicate its formula.`,
+    `Collect 5 genuine Google or WhatsApp reviews to establish solid social proof.`
+  ];
+
+  populateList("week1List", week1);
+  populateList("week2List", week2);
+  populateList("week3List", week3);
+  populateList("week4List", week4);
+
+  resultWrap.style.display = "block";
+  resultWrap.scrollIntoView({ behavior: "smooth" });
+}
+
+function populateList(elementId, items) {
+  const list = document.getElementById(elementId);
+  if (!list) return;
+  list.innerHTML = "";
+  items.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    list.appendChild(li);
+  });
+}
+
+/* ---------------------------------------------------
+   6. Marketing Mini-Tools (Caption, Hashtag, Ideas)
+   --------------------------------------------------- */
+function initMarketingMiniTools() {
+  // Caption Generator
+  const btnGenCaption = document.getElementById("btnGenCaption");
+  if (btnGenCaption) {
+    btnGenCaption.addEventListener("click", () => {
+      const product = document.getElementById("capProduct").value.trim() || "Fresh Arrivals";
+      const audience = document.getElementById("capAudience").value.trim() || "Smart Shoppers";
+      const tone = document.getElementById("capTone").value;
+      const resultBox = document.getElementById("captionResult");
+      const resultText = document.getElementById("captionResultText");
+
+      let caption = "";
+      if (tone === "Exciting") {
+        caption = `🔥 Upgrade Alert for all ${audience}! Discover our brand-new ${product} designed to make your day better. Available at limited launch prices today! Tap the link in bio or WhatsApp us to claim yours now! 🚀✨`;
+      } else if (tone === "Professional") {
+        caption = `Quality meets reliability. We are pleased to present our latest ${product}, curated specifically for ${audience}. Designed for durability, value, and customer satisfaction. Visit our store or message us for detailed specifications.`;
+      } else {
+        caption = `Hey ${audience}! 👋 Looking for the perfect ${product}? We've got something special handcrafted just for you. Drop by our store or send a DM—we are always happy to help you find your match! ☕💛`;
+      }
+
+      resultText.textContent = caption;
+      resultBox.style.display = "block";
+    });
+  }
+
+  // Hashtag Generator
+  const btnGenHashtag = document.getElementById("btnGenHashtag");
+  if (btnGenHashtag) {
+    btnGenHashtag.addEventListener("click", () => {
+      const category = document.getElementById("hashCategory").value;
+      const resultBox = document.getElementById("hashtagResult");
+      const badgesContainer = document.getElementById("hashtagBadges");
+
+      const tagMap = {
+        Clothing: ["#LocalFashion", "#IndianWear", "#OOTDIndia", "#BoutiqueFinds", "#StyleDaily", "#SmallBusinessIndia", "#ClothingBrand"],
+        Food: ["#FoodieVibes", "#LocalCafe", "#BakersOfInstagram", "#FreshEats", "#FoodLove", "#StreetEats", "#HomeCookedTaste"],
+        Beauty: ["#GlowUp", "#SkincareRoutine", "#SalonStyle", "#SelfCareIndia", "#BeautyTips", "#HealthySkin", "#LocalSalon"],
+        Retail: ["#ShopSmall", "#SupportLocal", "#HandmadeGoodies", "#RetailTherapy", "#QualityGoods", "#HomeDecorIndia"],
+        Services: ["#ProfessionalService", "#TrustedExperts", "#LocalRepairs", "#CustomerFirst", "#SmallBizSupport"]
+      };
+
+      const tags = tagMap[category] || tagMap.Retail;
+      badgesContainer.innerHTML = "";
+      tags.forEach(t => {
+        const span = document.createElement("span");
+        span.className = "tag-pill";
+        span.textContent = t;
+        badgesContainer.appendChild(span);
+      });
+
+      resultBox.style.display = "block";
+    });
+  }
+
+  // Content Idea Generator
+  const btnGenIdeas = document.getElementById("btnGenIdeas");
+  if (btnGenIdeas) {
+    btnGenIdeas.addEventListener("click", () => {
+      const category = document.getElementById("ideaCategory").value;
+      const resultBox = document.getElementById("ideasResult");
+      const ideasList = document.getElementById("ideasList");
+
+      const ideaMap = {
+        Clothing: [
+          "“3 Ways to Style” 15-second reel featuring a single versatile garment.",
+          "Customer spotlight wearing your collection at an event.",
+          "Behind the seams: How fabrics are sourced and selected for comfort.",
+          "Quick poll: Which color option would you wear this weekend?",
+          "Packing an order video with personal thank-you notes."
+        ],
+        Food: [
+          "Morning prep routine reel before opening the kitchen/bakery.",
+          "Close-up video capturing the sizzle/frosting process of your top dessert.",
+          "Introducing the team member behind your special recipes.",
+          "“Order of the Day”: Answering why a particular dish is beloved.",
+          "Weekend discount announcement exclusively for WhatsApp VIP members."
+        ],
+        Beauty: [
+          "Before vs. After client glow-up clip (with permission).",
+          "Common ingredient debunked: What actually benefits dry or oily skin.",
+          "Tools of the trade: How we sanitize and sterilize equipment daily.",
+          "Mini tutorial: Fast 3-minute evening self-care routine.",
+          "Weekly Q&A answering follower beauty questions."
+        ],
+        Retail: [
+          "Unboxing new stock inventory that just arrived in store.",
+          "Staff pick of the week and why it's a customer favorite.",
+          "Comparison guide: Budget option vs. Premium selection.",
+          "How to properly clean and maintain this item at home.",
+          "Tour of the store aisles for shoppers exploring nearby."
+        ],
+        Services: [
+          "Case study: How we fixed a client's problem in under 2 hours.",
+          "3 subtle warning signs that your equipment or setup needs servicing.",
+          "Checklist of things to verify before hiring any local contractor.",
+          "Customer review quote displayed over photo of finished work.",
+          "A day in the life of our on-field service technician."
+        ]
+      };
+
+      const ideas = ideaMap[category] || ideaMap.Retail;
+      ideasList.innerHTML = "";
+      ideas.forEach(idea => {
+        const li = document.createElement("li");
+        li.textContent = idea;
+        ideasList.appendChild(li);
+      });
+
+      resultBox.style.display = "block";
+    });
+  }
+}
+
+// Global helper for clipboard
+window.copyToClipboard = function(elementId) {
+  const el = document.getElementById(elementId);
+  if (!el) return;
+  const text = el.innerText || el.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Copied to clipboard!");
+  }).catch(() => {
+    alert("Copying failed. Please highlight and copy manually.");
+  });
+};
+
+/* ---------------------------------------------------
+   7. FAQ Accordion
+   --------------------------------------------------- */
+function initFaqAccordion() {
+  const accHeaders = document.querySelectorAll(".accordion-header");
+  accHeaders.forEach(header => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+      const isOpen = content.classList.contains("open");
+
+      // Close all open accordions for tidy view
+      document.querySelectorAll(".accordion-content").forEach(c => c.classList.remove("open"));
+      document.querySelectorAll(".accordion-header").forEach(h => h.classList.remove("active"));
+
+      if (!isOpen) {
+        header.classList.add("active");
+        content.classList.add("open");
+      }
+    });
+  });
+}
+
+/* ---------------------------------------------------
+   8. Contact Form
+   --------------------------------------------------- */
+function initContactForm() {
+  const form = document.getElementById("contactForm");
+  if (!form) return;
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = document.getElementById("contactName").value.trim();
+    const email = document.getElementById("contactEmail").value.trim();
+    const message = document.getElementById("contactMessage").value.trim();
+    const alertBox = document.getElementById("contactAlert");
+
+    // Validation
+    let hasErr = false;
+    document.querySelectorAll(".error-msg").forEach(el => el.textContent = "");
+
+    if (!name) {
+      document.getElementById("contactNameError").textContent = "Name is required.";
+      hasErr = true;
+    }
+    if (!email || !email.includes("@")) {
+      document.getElementById("contactEmailError").textContent = "Valid email is required.";
+      hasErr = true;
+    }
+    if (!message) {
+      document.getElementById("contactMessageError").textContent = "Message cannot be empty.";
+      hasErr = true;
+    }
+
+    if (!hasErr) {
+      showAlert(alertBox, "Thank you! Your message has been received. Our counselor will contact you shortly.", "alert-success");
+      form.reset();
+    }
+  });
+}
+
+/* ---------------------------------------------------
+   Security / Helper Utility
+   --------------------------------------------------- */
+function escapeHtml(string) {
+  if (!string) return "";
+  return String(string)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}

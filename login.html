@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — BizBoost Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-chart-line"></i>
+        <span>BizBoost<strong>Academy</strong></span>
+      </a>
+      <a href="index.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </div>
+  </header>
+
+  <main class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <h2>Welcome Back</h2>
+        <p>Sign in to continue your small business growth journey</p>
+      </div>
+
+      <div id="loginAlert" class="alert-box" style="display: none;"></div>
+
+      <form id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="loginEmail">Email Address</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="loginEmail" placeholder="name@business.com" required>
+          </div>
+          <small class="error-msg" id="loginEmailError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="loginPassword" placeholder="••••••••" required>
+          </div>
+          <small class="error-msg" id="loginPasswordError"></small>
+        </div>
+
+        <div class="form-row-space">
+          <label class="checkbox-container">
+            <input type="checkbox" id="rememberMe">
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="inline-link" onclick="alert('Demo Mode: Use demo@bizboost.com / 123456 to log in.'); return false;">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">
+          <i class="fa-solid fa-right-to-bracket"></i> Login
+        </button>
+
+        <button type="button" class="btn btn-outline btn-block" id="demoUserBtn" style="margin-top: 10px;">
+          <i class="fa-solid fa-user-check"></i> Continue as Demo User
+        </button>
+      </form>
+
+      <div class="auth-footer">
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

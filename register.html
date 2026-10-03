@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register — BizBoost Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-chart-line"></i>
+        <span>BizBoost<strong>Academy</strong></span>
+      </a>
+      <a href="index.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </div>
+  </header>
+
+  <main class="auth-wrapper">
+    <div class="auth-card auth-card-wide">
+      <div class="auth-header">
+        <h2>Create Your Business Account</h2>
+        <p>Start learning digital marketing custom-built for small businesses.</p>
+      </div>
+
+      <div id="registerAlert" class="alert-box" style="display: none;"></div>
+
+      <form id="registerForm" novalidate>
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="regFullName">Full Name *</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="regFullName" placeholder="e.g. Ramesh Kumar" required>
+            </div>
+            <small class="error-msg" id="regFullNameError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="regBizName">Business Name *</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-store"></i>
+              <input type="text" id="regBizName" placeholder="e.g. Kumar Handlooms" required>
+            </div>
+            <small class="error-msg" id="regBizNameError"></small>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="regEmail">Email Address *</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="regEmail" placeholder="kumar@business.com" required>
+          </div>
+          <small class="error-msg" id="regEmailError"></small>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="regPassword">Password * (Min. 6 chars)</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="regPassword" placeholder="••••••••" required>
+            </div>
+            <small class="error-msg" id="regPasswordError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="regConfirmPassword">Confirm Password *</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="regConfirmPassword" placeholder="••••••••" required>
+            </div>
+            <small class="error-msg" id="regConfirmPasswordError"></small>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="regBizCategory">Business Category *</label>
+            <select id="regBizCategory" required>
+              <option value="">Select Category</option>
+              <option value="Clothing">Clothing & Apparel</option>
+              <option value="Food">Food & Bakery</option>
+              <option value="Retail">General Retail</option>
+              <option value="Beauty">Beauty & Salon</option>
+              <option value="Electronics">Electronics & Repairs</option>
+              <option value="Services">Professional Services</option>
+              <option value="Other">Other</option>
+            </select>
+            <small class="error-msg" id="regBizCategoryError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="regExperience">Experience Level *</label>
+            <select id="regExperience" required>
+              <option value="">Select Level</option>
+              <option value="Beginner">Beginner (No digital experience)</option>
+              <option value="Intermediate">Intermediate (Have active social page)</option>
+              <option value="Advanced">Advanced (Run ads / have e-commerce)</option>
+            </select>
+            <small class="error-msg" id="regExperienceError"></small>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">
+          <i class="fa-solid fa-user-plus"></i> Register My Business
+        </button>
+      </form>
+
+      <div class="auth-footer">
+        <p>Already have an account? <a href="login.html">Login</a></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

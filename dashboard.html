@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — BizBoost Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+
+  <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+      <div class="sidebar-brand">
+        <a href="index.html" class="brand-logo">
+          <i class="fa-solid fa-chart-line"></i>
+          <span>BizBoost</span>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="dashboard.html" class="active"><i class="fa-solid fa-gauge"></i> <span>Dashboard</span></a></li>
+          <li><a href="courses.html"><i class="fa-solid fa-book-open"></i> <span>My Courses</span></a></li>
+          <li><a href="simulator.html"><i class="fa-solid fa-calculator"></i> <span>Growth Simulator</span></a></li>
+          <li><a href="courses.html#toolsSection"><i class="fa-solid fa-wrench"></i> <span>Marketing Tools</span></a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-circle-question"></i> <span>Help & Support</span></a></li>
+          <li><a href="#" id="logoutLink" class="logout-btn"><i class="fa-solid fa-arrow-right-from-bracket"></i> <span>Logout</span></a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="dashboard-main">
+      <!-- Top Bar -->
+      <header class="dashboard-topbar">
+        <button class="mobile-toggle" id="sidebarToggleBtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="user-greeting">
+          <h2 id="dashWelcomeUser">Welcome back, Business Owner 👋</h2>
+          <p id="dashUserBizDetails" class="text-muted">Loading business details...</p>
+        </div>
+        <div class="topbar-actions">
+          <a href="courses.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-play"></i> Continue Learning</a>
+        </div>
+      </header>
+
+      <!-- Dashboard Container -->
+      <main class="dashboard-content">
+        <!-- Metric Cards -->
+        <div class="stats-grid">
+          <div class="stat-card stat-card-alt">
+            <div class="stat-meta">
+              <span class="stat-label">Course Progress</span>
+              <i class="fa-solid fa-spinner stat-icon-mini"></i>
+            </div>
+            <h3 class="stat-number" id="dashOverallProgress">35%</h3>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" id="dashOverallProgressBar" style="width: 35%;"></div>
+            </div>
+          </div>
+
+          <div class="stat-card stat-card-alt">
+            <div class="stat-meta">
+              <span class="stat-label">Completed Lessons</span>
+              <i class="fa-solid fa-check-double stat-icon-mini"></i>
+            </div>
+            <h3 class="stat-number" id="dashCompletedCount">6 / 17</h3>
+            <p class="stat-sub">Across 4 modules</p>
+          </div>
+
+          <div class="stat-card stat-card-alt">
+            <div class="stat-meta">
+              <span class="stat-label">Marketing Score</span>
+              <i class="fa-solid fa-bullseye stat-icon-mini"></i>
+            </div>
+            <h3 class="stat-number" id="dashGrowthScoreDisplay">74 / 100</h3>
+            <p class="stat-sub">Based on simulator data</p>
+          </div>
+
+          <div class="stat-card stat-card-alt">
+            <div class="stat-meta">
+              <span class="stat-label">Current Streak</span>
+              <i class="fa-solid fa-fire stat-icon-mini"></i>
+            </div>
+            <h3 class="stat-number">4 Days</h3>
+            <p class="stat-sub">Keep the momentum going!</p>
+          </div>
+        </div>
+
+        <!-- Today's Marketing Task Banner -->
+        <div class="task-card" id="taskCard">
+          <div class="task-left">
+            <div class="task-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+            <div>
+              <span class="badge badge-warning">Today's Practical Task</span>
+              <h3 id="taskTitle">Create one Instagram post showcasing your bestselling product</h3>
+              <p id="taskDesc">Use 3 product benefits in your caption and add 5 relevant local hashtags.</p>
+            </div>
+          </div>
+          <button class="btn btn-accent" id="markTaskCompletedBtn">
+            <i class="fa-solid fa-check"></i> Mark as Completed
+          </button>
+        </div>
+
+        <!-- Recommended Learning -->
+        <div class="dash-section">
+          <div class="section-subheading">
+            <h3>Recommended Learning</h3>
+            <a href="courses.html" class="inline-link">View All Courses <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div class="cards-grid">
+            <div class="course-mini-card">
+              <div class="course-mini-header">
+                <span class="badge">Module 1</span>
+                <h4>Digital Marketing Fundamentals</h4>
+              </div>
+              <p>Master online presence, buyer personas, and business branding.</p>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 75%;"></div>
+              </div>
+              <div class="course-mini-footer">
+                <span>3 / 4 Lessons</span>
+                <a href="courses.html" class="btn btn-outline btn-sm">Continue</a>
+              </div>
+            </div>
+
+            <div class="course-mini-card">
+              <div class="course-mini-header">
+                <span class="badge">Module 2</span>
+                <h4>Social Media Marketing</h4>
+              </div>
+              <p>Learn viral reel formats, captions, and daily engagement routines.</p>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 40%;"></div>
+              </div>
+              <div class="course-mini-footer">
+                <span>2 / 5 Lessons</span>
+                <a href="courses.html" class="btn btn-outline btn-sm">Continue</a>
+              </div>
+            </div>
+
+            <div class="course-mini-card">
+              <div class="course-mini-header">
+                <span class="badge">Module 3</span>
+                <h4>WhatsApp Marketing</h4>
+              </div>
+              <p>Setup catalog showcase, welcome bots, and customer broadcasting.</p>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 25%;"></div>
+              </div>
+              <div class="course-mini-footer">
+                <span>1 / 4 Lessons</span>
+                <a href="courses.html" class="btn btn-outline btn-sm">Continue</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links to Tools -->
+        <div class="tools-teaser-banner">
+          <div>
+            <h3>Need Content In a Hurry?</h3>
+            <p>Use our built-in Caption Generator and Hashtag Finder.</p>
+          </div>
+          <a href="courses.html#toolsSection" class="btn btn-primary">Open Free Tools</a>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

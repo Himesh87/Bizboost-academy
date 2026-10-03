@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses & Built-in Tools — BizBoost Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-chart-line"></i>
+        <span>BizBoost<strong>Academy</strong></span>
+      </a>
+
+      <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html" class="active">Courses</a></li>
+          <li><a href="simulator.html">Growth Simulator</a></li>
+          <li><a href="contact.html">Contact & FAQ</a></li>
+        </ul>
+        <div class="nav-auth" id="navAuthArea">
+          <a href="login.html" class="btn btn-outline">Login</a>
+          <a href="register.html" class="btn btn-primary">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-title-banner">
+    <div class="container text-center">
+      <h1>Practical Marketing Courses</h1>
+      <p>Bite-sized, jargon-free lessons built specifically for local retail and service enterprises.</p>
+    </div>
+  </section>
+
+  <!-- Course Modules List -->
+  <main class="section">
+    <div class="container">
+      <div class="course-list-stack">
+
+        <!-- Course 1 -->
+        <div class="course-item-card" data-course-id="c1">
+          <div class="course-item-info">
+            <div class="course-tag-row">
+              <span class="badge">Course 1</span>
+              <span class="badge badge-info">Beginner</span>
+              <span class="text-muted"><i class="fa-solid fa-clock"></i> 4 Lessons</span>
+            </div>
+            <h2>Digital Marketing Fundamentals</h2>
+            <p>Understand the online customer cycle, discover how your competitors sell online, and establish clean digital touchpoints for your store.</p>
+            <ul class="lesson-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 1: What is Digital Marketing?</li>
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 2: Understanding Your Customers</li>
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 3: Creating a Digital Presence</li>
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 4: Setting Marketing Goals</li>
+            </ul>
+          </div>
+          <div class="course-item-action">
+            <div class="progress-text-row">
+              <span>Course Progress</span>
+              <strong class="course-pct-label" id="c1-pct">75%</strong>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" id="c1-bar" style="width: 75%;"></div>
+            </div>
+            <button class="btn btn-primary btn-block toggle-lesson-btn" onclick="toggleCourseProgress('c1')">
+              <i class="fa-solid fa-circle-check"></i> Complete Next Lesson
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-item-card" data-course-id="c2">
+          <div class="course-item-info">
+            <div class="course-tag-row">
+              <span class="badge">Course 2</span>
+              <span class="badge badge-info">Intermediate</span>
+              <span class="text-muted"><i class="fa-solid fa-clock"></i> 5 Lessons</span>
+            </div>
+            <h2>Social Media Marketing</h2>
+            <p>From captivating 15-second Reels to local community hashtags, turn passive scrollers into walk-in buyers.</p>
+            <ul class="lesson-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 1: Instagram Basics & Bio Optimization</li>
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 2: Facebook Business Pages & Groups</li>
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 3: Content Planning & Visual Cohesion</li>
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 4: Reels & Short Videos Creation</li>
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 5: Hashtags & Community Engagement</li>
+            </ul>
+          </div>
+          <div class="course-item-action">
+            <div class="progress-text-row">
+              <span>Course Progress</span>
+              <strong class="course-pct-label" id="c2-pct">40%</strong>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" id="c2-bar" style="width: 40%;"></div>
+            </div>
+            <button class="btn btn-primary btn-block toggle-lesson-btn" onclick="toggleCourseProgress('c2')">
+              <i class="fa-solid fa-circle-check"></i> Complete Next Lesson
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-item-card" data-course-id="c3">
+          <div class="course-item-info">
+            <div class="course-tag-row">
+              <span class="badge">Course 3</span>
+              <span class="badge badge-info">All Levels</span>
+              <span class="text-muted"><i class="fa-solid fa-clock"></i> 4 Lessons</span>
+            </div>
+            <h2>WhatsApp Marketing</h2>
+            <p>Use India's favorite communication tool to close orders directly, distribute new stock catalogs, and automate customer support.</p>
+            <ul class="lesson-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 1: Setting up WhatsApp Business Profile</li>
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 2: Professional Customer Communication</li>
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 3: Creating & Updating Product Catalogs</li>
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 4: Broadcast Lists & Promotional Etiquette</li>
+            </ul>
+          </div>
+          <div class="course-item-action">
+            <div class="progress-text-row">
+              <span>Course Progress</span>
+              <strong class="course-pct-label" id="c3-pct">25%</strong>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" id="c3-bar" style="width: 25%;"></div>
+            </div>
+            <button class="btn btn-primary btn-block toggle-lesson-btn" onclick="toggleCourseProgress('c3')">
+              <i class="fa-solid fa-circle-check"></i> Complete Next Lesson
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="course-item-card" data-course-id="c4">
+          <div class="course-item-info">
+            <div class="course-tag-row">
+              <span class="badge">Course 4</span>
+              <span class="badge badge-info">Beginner</span>
+              <span class="text-muted"><i class="fa-solid fa-clock"></i> 4 Lessons</span>
+            </div>
+            <h2>Content Creation for Everyday Businesses</h2>
+            <p>Never run out of post ideas again. Learn to snap clean phone photos, write compelling captions, and build a monthly plan.</p>
+            <ul class="lesson-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 1: Finding Endless Content Ideas</li>
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 2: Captions that Provoke Comments</li>
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 3: Phone Photography & Fast Video Edits</li>
+              <li><i class="fa-solid fa-circle-check"></i> Lesson 4: The 7-Day Recurring Content Calendar</li>
+            </ul>
+          </div>
+          <div class="course-item-action">
+            <div class="progress-text-row">
+              <span>Course Progress</span>
+              <strong class="course-pct-label" id="c4-pct">0%</strong>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" id="c4-bar" style="width: 0%;"></div>
+            </div>
+            <button class="btn btn-primary btn-block toggle-lesson-btn" onclick="toggleCourseProgress('c4')">
+              <i class="fa-solid fa-circle-check"></i> Complete Next Lesson
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- SECTION 7: PRACTICAL MARKETING TOOLS -->
+  <section class="section bg-light" id="toolsSection">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2>Interactive Marketing Mini-Tools</h2>
+        <p>No expensive software or AI API keys required. Generate copy and content concepts on demand.</p>
+      </div>
+
+      <div class="tools-grid">
+
+        <!-- Tool 1: Caption Generator -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <i class="fa-solid fa-pen-fancy tool-icon"></i>
+            <h3>Caption Generator</h3>
+          </div>
+          <p class="tool-desc">Quickly draft an engaging caption for your promotional posts.</p>
+          
+          <div class="form-group">
+            <label for="capProduct">Product / Service</label>
+            <input type="text" id="capProduct" placeholder="e.g. Cotton Summer Kurti, Chocolate Cake">
+          </div>
+          <div class="form-group">
+            <label for="capAudience">Target Audience</label>
+            <input type="text" id="capAudience" placeholder="e.g. Working women, college students">
+          </div>
+          <div class="form-group">
+            <label for="capTone">Tone</label>
+            <select id="capTone">
+              <option value="Friendly">Friendly & Welcoming</option>
+              <option value="Exciting">High-Energy & Urgent</option>
+              <option value="Professional">Professional & Trustworthy</option>
+            </select>
+          </div>
+          <button class="btn btn-primary btn-block" id="btnGenCaption">Generate Caption</button>
+
+          <div class="tool-result-box" id="captionResult" style="display:none;">
+            <p id="captionResultText"></p>
+            <button class="btn btn-sm btn-outline" onclick="copyToClipboard('captionResultText')"><i class="fa-regular fa-copy"></i> Copy</button>
+          </div>
+        </div>
+
+        <!-- Tool 2: Hashtag Generator -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <i class="fa-solid fa-hashtag tool-icon"></i>
+            <h3>Hashtag Suggestion Tool</h3>
+          </div>
+          <p class="tool-desc">Get relevant tags to increase discoverability on Instagram and LinkedIn.</p>
+
+          <div class="form-group">
+            <label for="hashCategory">Business Category</label>
+            <select id="hashCategory">
+              <option value="Clothing">Clothing & Fashion</option>
+              <option value="Food">Food, Cafe & Bakery</option>
+              <option value="Beauty">Beauty, Salon & Skincare</option>
+              <option value="Retail">Handicrafts & General Retail</option>
+              <option value="Services">Consulting & Repair Services</option>
+            </select>
+          </div>
+          <button class="btn btn-primary btn-block" id="btnGenHashtag">Get Suggested Hashtags</button>
+
+          <div class="tool-result-box" id="hashtagResult" style="display:none;">
+            <div class="tags-container" id="hashtagBadges"></div>
+            <button class="btn btn-sm btn-outline" style="margin-top:10px;" onclick="copyToClipboard('hashtagBadges')"><i class="fa-regular fa-copy"></i> Copy Tags</button>
+          </div>
+        </div>
+
+        <!-- Tool 3: Content Idea Generator -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <i class="fa-solid fa-lightbulb tool-icon"></i>
+            <h3>Content Idea Generator</h3>
+          </div>
+          <p class="tool-desc">Overcome creator block with 5 ready-to-use business post concepts.</p>
+
+          <div class="form-group">
+            <label for="ideaCategory">Select Your Industry</label>
+            <select id="ideaCategory">
+              <option value="Clothing">Clothing & Apparel</option>
+              <option value="Food">Food & Beverage</option>
+              <option value="Beauty">Beauty & Wellness</option>
+              <option value="Retail">Retail & Hardware</option>
+              <option value="Services">Local Service Providers</option>
+            </select>
+          </div>
+          <button class="btn btn-primary btn-block" id="btnGenIdeas">Generate 5 Ideas</button>
+
+          <div class="tool-result-box" id="ideasResult" style="display:none;">
+            <ol id="ideasList" class="tool-ol"></ol>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="brand-logo">
+          <i class="fa-solid fa-chart-line"></i>
+          <span>BizBoost<strong>Academy</strong></span>
+        </div>
+        <p class="footer-desc">Practical digital marketing education for local entrepreneurs.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="simulator.html">Growth Simulator</a></li>
+          <li><a href="contact.html">Contact & FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Access</h4>
+        <p><a href="dashboard.html" class="inline-link">Go to Student Dashboard</a></p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-bottom:10px"><a href="privacy.html" class="inline-link">Privacy</a> &nbsp; <a href="terms.html" class="inline-link">Terms</a></div>
+    <div class="footer-bottom text-center">
+      <p>&copy; BizBoost Academy. Designed for Academic Demonstration.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

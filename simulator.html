@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Growth Simulator — BizBoost Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-chart-line"></i>
+        <span>BizBoost<strong>Academy</strong></span>
+      </a>
+
+      <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="simulator.html" class="active">Growth Simulator</a></li>
+          <li><a href="contact.html">Contact & FAQ</a></li>
+        </ul>
+        <div class="nav-auth" id="navAuthArea">
+          <a href="login.html" class="btn btn-outline">Login</a>
+          <a href="register.html" class="btn btn-primary">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Title Banner -->
+  <section class="page-title-banner">
+    <div class="container text-center">
+      <span class="badge badge-warning">Featured Interactive Simulator</span>
+      <h1>Business Growth Simulator</h1>
+      <p>Tell us about your business and we'll create a personalized 30-day digital marketing action plan.</p>
+    </div>
+  </section>
+
+  <!-- Simulator Main Form Section -->
+  <main class="section">
+    <div class="container simulator-container">
+
+      <!-- Form Box -->
+      <div class="simulator-card no-print">
+        <div class="simulator-card-header">
+          <h2><i class="fa-solid fa-sliders"></i> Enter Business Parameters</h2>
+          <p>Fill in your present metrics to analyze your digital potential.</p>
+        </div>
+
+        <form id="growthSimulatorForm" novalidate>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="simBizType">Business Type *</label>
+              <select id="simBizType" required>
+                <option value="Retail">Retail Store</option>
+                <option value="Food">Food / Restaurant / Cafe</option>
+                <option value="Clothing">Clothing & Apparel</option>
+                <option value="Beauty">Beauty & Salon</option>
+                <option value="Service">Professional Service</option>
+                <option value="Other">Other Local Venture</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="simCustomers">Current Customers Per Month *</label>
+              <input type="number" id="simCustomers" min="0" placeholder="e.g. 150" required value="120">
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="simFollowers">Instagram / Social Followers *</label>
+              <input type="number" id="simFollowers" min="0" placeholder="e.g. 450" required value="350">
+            </div>
+
+            <div class="form-group">
+              <label for="simBudget">Monthly Marketing Budget (INR / ₹) *</label>
+              <input type="number" id="simBudget" min="0" step="500" placeholder="e.g. 3000" required value="2000">
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="simPresence">Current Online Presence *</label>
+              <select id="simPresence" required>
+                <option value="No website">No website or profile yet</option>
+                <option value="Instagram only" selected>Instagram account only</option>
+                <option value="Instagram + Facebook">Instagram + Facebook Pages</option>
+                <option value="Website + Social Media">Full Website + Active Socials</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="simExperience">Marketing Experience *</label>
+              <select id="simExperience" required>
+                <option value="Beginner" selected>Beginner (Little to no experience)</option>
+                <option value="Intermediate">Intermediate (Occasional posts & offers)</option>
+                <option value="Advanced">Advanced (Run regular paid campaigns)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="simGoal">Main Business Goal *</label>
+            <select id="simGoal" required>
+              <option value="Get more customers">Get more walk-in & local customers</option>
+              <option value="Increase Instagram followers">Increase targeted social followers</option>
+              <option value="Increase sales">Increase overall monthly order sales</option>
+              <option value="Build brand awareness">Build trusted local brand awareness</option>
+              <option value="Start online business">Transition from physical shop to online selling</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-large btn-block" style="margin-top: 15px;">
+            <i class="fa-solid fa-rocket"></i> Generate My Growth Plan
+          </button>
+        </form>
+      </div>
+
+      <!-- RESULTS SECTION (Initially hidden or populated) -->
+      <div class="simulator-result-wrap" id="simulatorResultWrap" style="display: none;">
+        <div class="results-header-box printable-card">
+          <div class="score-card-layout">
+            <div class="score-circle-outer">
+              <div class="score-circle" id="scoreCircle">
+                <span class="score-number" id="growthScoreNum">72</span>
+                <span class="score-out">/ 100</span>
+              </div>
+              <span class="score-disclaimer">Demo Growth Score</span>
+            </div>
+            <div class="score-text-area">
+              <span class="badge badge-success">Plan Ready</span>
+              <h2>Your Digital Growth Potential</h2>
+              <p id="scoreSummaryPara">
+                Based on your inputs, your business is primed for substantial local visibility gains through systematic content and direct messaging funnels.
+              </p>
+              <div class="print-btn-bar no-print">
+                <button class="btn btn-primary" onclick="window.print()">
+                  <i class="fa-solid fa-print"></i> Download / Print My 30-Day Plan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 30-Day Action Plan Layout -->
+        <div class="plan-timeline printable-card">
+          <h2 class="plan-timeline-title"><i class="fa-regular fa-calendar-check"></i> Your Personalized 30-Day Action Plan</h2>
+
+          <div class="week-card" id="week1Card">
+            <div class="week-pill">Week 1</div>
+            <h3>Build Your Foundation</h3>
+            <ul id="week1List" class="plan-checklist"></ul>
+          </div>
+
+          <div class="week-card" id="week2Card">
+            <div class="week-pill">Week 2</div>
+            <h3>Content Creation Engine</h3>
+            <ul id="week2List" class="plan-checklist"></ul>
+          </div>
+
+          <div class="week-card" id="week3Card">
+            <div class="week-pill">Week 3</div>
+            <h3>Customer Engagement & Conversions</h3>
+            <ul id="week3List" class="plan-checklist"></ul>
+          </div>
+
+          <div class="week-card" id="week4Card">
+            <div class="week-pill">Week 4</div>
+            <h3>Scaling & Measurement</h3>
+            <ul id="week4List" class="plan-checklist"></ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer no-print">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="brand-logo">
+          <i class="fa-solid fa-chart-line"></i>
+          <span>BizBoost<strong>Academy</strong></span>
+        </div>
+        <p class="footer-desc">Practical digital marketing education for local entrepreneurs.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="simulator.html">Growth Simulator</a></li>
+          <li><a href="contact.html">Contact & FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Local Demo</h4>
+        <p>Built with Vanilla HTML, CSS & JS for University Evaluation.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-bottom:10px"><a href="privacy.html" class="inline-link">Privacy</a> &nbsp; <a href="terms.html" class="inline-link">Terms</a></div>
+    <div class="footer-bottom text-center">
+      <p>&copy; BizBoost Academy. Designed for Academic Demonstration.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
