@@ -1523,3 +1523,550 @@ textarea:focus {
     width: 155px;
   }
 }
+
+
+/* ===================================================
+   BizBoost Academy — Professional UI Refinement
+   Purpose: cleaner, more credible product-style presentation
+   =================================================== */
+
+:root {
+  --primary: #172554;
+  --primary-light: #1e3a8a;
+  --accent: #0284c7;
+  --accent-hover: #0369a1;
+  --accent-soft: #e0f2fe;
+  --bg-light: #f7f9fc;
+  --card-bg: #ffffff;
+  --text-main: #172033;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, .06);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, .08);
+  --shadow-lg: 0 18px 45px rgba(15, 23, 42, .12);
+  --transition: 180ms ease;
+}
+
+body {
+  background: #fff;
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #bae6fd;
+  color: #0f172a;
+}
+
+.container {
+  width: min(92%, 1180px);
+}
+
+.section {
+  padding: 76px 0;
+}
+
+.section-heading {
+  max-width: 720px;
+  margin: 0 auto 42px;
+}
+
+.section-heading h2 {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  letter-spacing: -.025em;
+}
+
+.section-heading p {
+  font-size: 1rem;
+}
+
+/* Header */
+.site-header {
+  background: rgba(255,255,255,.96);
+  box-shadow: 0 1px 0 rgba(15,23,42,.06);
+  backdrop-filter: blur(12px);
+}
+
+.nav-container {
+  height: 70px;
+}
+
+.brand-logo {
+  gap: 8px;
+  font-size: 1.12rem;
+  letter-spacing: -.02em;
+}
+
+.brand-logo img {
+  width: 168px;
+  max-height: 48px;
+}
+
+.brand-logo span {
+  display: none;
+}
+
+.nav-links {
+  gap: 28px;
+}
+
+.nav-links a {
+  font-size: .92rem;
+  color: #475569;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary-light);
+}
+
+.nav-links a.active::after {
+  background: var(--accent);
+  height: 2px;
+}
+
+.nav-auth {
+  gap: 8px;
+}
+
+.btn {
+  min-height: 40px;
+  padding: 9px 17px;
+  border-radius: 8px;
+  font-size: .9rem;
+  font-weight: 650;
+  letter-spacing: -.005em;
+}
+
+.btn-large {
+  min-height: 46px;
+  padding: 12px 22px;
+}
+
+.btn-primary {
+  background: var(--primary);
+  box-shadow: 0 1px 2px rgba(15,23,42,.08);
+}
+
+.btn-primary:hover {
+  background: var(--primary-light);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(23,37,84,.18);
+}
+
+.btn-accent {
+  background: var(--accent);
+  box-shadow: 0 1px 2px rgba(2,132,199,.12);
+}
+
+.btn-accent:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(2,132,199,.18);
+}
+
+.btn-outline {
+  border-color: #d7dee8;
+  color: #334155;
+}
+
+.btn-outline:hover {
+  border-color: #94a3b8;
+  background: #f8fafc;
+}
+
+/* Static-demo notice */
+#staticNotice {
+  font-size: .78rem !important;
+  padding: 7px 16px !important;
+  background: #f8fafc !important;
+  border-bottom: 1px solid #e8edf3 !important;
+  color: #64748b !important;
+}
+
+/* Home hero */
+.hero-section {
+  background: linear-gradient(135deg, #172554 0%, #1e3a8a 100%);
+  padding: 88px 0 92px;
+}
+
+.hero-grid {
+  gap: 64px;
+}
+
+.hero-title {
+  font-size: clamp(2.25rem, 5vw, 3.45rem);
+  letter-spacing: -.045em;
+  max-width: 680px;
+}
+
+.hero-subtitle {
+  max-width: 630px;
+  font-size: 1.08rem;
+  color: #dbe7f5;
+}
+
+.hero-buttons {
+  gap: 10px;
+}
+
+.hero-buttons .btn-outline-light {
+  border-color: rgba(255,255,255,.3);
+}
+
+.mockup-card {
+  border-radius: 14px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: 0 22px 55px rgba(2,6,23,.24);
+  backdrop-filter: blur(10px);
+}
+
+.stats-section {
+  padding: 28px 0;
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid #e8edf3;
+  padding: 18px;
+}
+
+.stat-number {
+  font-size: 1.9rem;
+}
+
+/* General cards */
+.info-card,
+.step-item,
+.course-mini-card,
+.tool-card,
+.contact-form-card,
+.auth-card,
+.simulator-card,
+.results-header-box,
+.plan-timeline {
+  border-color: #e3e8ef;
+  box-shadow: var(--shadow-sm);
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+  border-color: #bfdbfe;
+  box-shadow: var(--shadow-md);
+}
+
+.info-card h3,
+.step-item h3 {
+  letter-spacing: -.015em;
+}
+
+.card-icon,
+.tile-icon {
+  background: #eff6ff;
+  color: #0369a1;
+}
+
+/* Page headers */
+.page-title-banner {
+  background: #f8fafc;
+  padding: 54px 0;
+}
+
+.page-title-banner h1 {
+  font-size: clamp(2rem, 4vw, 2.55rem);
+  letter-spacing: -.035em;
+}
+
+.page-title-banner p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #64748b;
+}
+
+/* Forms */
+.auth-wrapper {
+  padding: 54px 15px 80px;
+}
+
+.auth-card {
+  border-radius: 14px;
+  padding: 38px;
+  box-shadow: 0 12px 35px rgba(15,23,42,.08);
+}
+
+.auth-header h2 {
+  letter-spacing: -.025em;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+  min-height: 44px;
+  border-color: #d8e0ea;
+  border-radius: 8px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: #b8c4d3;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2,132,199,.10);
+}
+
+/* Courses */
+.course-list-stack,
+.tools-grid {
+  gap: 18px;
+}
+
+.course-item-card {
+  border-radius: 14px;
+  padding: 26px;
+  transition: var(--transition);
+}
+
+.course-item-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: var(--shadow-md);
+}
+
+.course-item-action {
+  border-radius: 10px;
+}
+
+.progress-bar-bg {
+  height: 7px;
+  background: #e8edf3;
+}
+
+.progress-bar-fill {
+  background: #0284c7;
+}
+
+/* Dashboard */
+.dashboard-body {
+  background: #f7f9fc;
+}
+
+.dashboard-sidebar {
+  width: 238px;
+  background: #172554;
+}
+
+.sidebar-brand {
+  padding: 20px 22px;
+}
+
+.sidebar-nav ul li a {
+  padding: 11px 22px;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-nav ul li a:hover,
+.sidebar-nav ul li a.active {
+  background: rgba(255,255,255,.07);
+  border-left-color: #38bdf8;
+}
+
+.dashboard-topbar {
+  padding: 16px 28px;
+}
+
+.dashboard-content {
+  padding: 28px;
+}
+
+.stat-card-alt,
+.task-card {
+  background: #fff;
+}
+
+.task-card {
+  border-left-width: 4px;
+}
+
+.tools-teaser-banner {
+  background: #172554;
+  border-radius: 12px;
+}
+
+/* Simulator */
+.simulator-card,
+.results-header-box,
+.plan-timeline {
+  border-radius: 14px;
+}
+
+.score-circle {
+  background: #f0f9ff;
+  box-shadow: none;
+}
+
+.week-card {
+  background: #f8fafc;
+  border-left-width: 3px;
+}
+
+/* FAQ */
+.accordion-item {
+  border-color: #e3e8ef;
+  box-shadow: var(--shadow-sm);
+}
+
+.accordion-header:hover {
+  background: #f8fafc;
+}
+
+/* Footer */
+.site-footer {
+  background: #0f172a;
+  padding: 54px 0 22px;
+}
+
+.site-footer .brand-logo img {
+  width: 168px;
+}
+
+.footer-grid {
+  gap: 52px;
+}
+
+.footer-col h4 {
+  font-size: .95rem;
+}
+
+.footer-bottom {
+  color: #94a3b8;
+}
+
+/* Legal pages */
+main.section h1 {
+  letter-spacing: -.035em;
+  color: var(--primary);
+}
+
+main.section h2 {
+  margin-top: 30px;
+  margin-bottom: 8px;
+  color: var(--primary);
+  font-size: 1.25rem;
+}
+
+main.section p {
+  color: #526176;
+}
+
+/* Better keyboard accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(14,165,233,.28);
+  outline-offset: 2px;
+}
+
+/* Mobile refinement */
+@media (max-width: 768px) {
+  .nav-container {
+    height: 64px;
+  }
+
+  .site-header .brand-logo img {
+    width: 142px;
+    max-height: 44px;
+  }
+
+  .nav-menu {
+    top: 64px;
+    padding: 18px;
+  }
+
+  .hero-section {
+    padding: 64px 0 70px;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .section {
+    padding: 58px 0;
+  }
+
+  .auth-card,
+  .simulator-card,
+  .results-header-box,
+  .plan-timeline {
+    padding: 24px;
+  }
+
+  .dashboard-content {
+    padding: 18px 14px;
+  }
+
+  .dashboard-topbar {
+    padding: 13px 15px;
+  }
+
+  .footer-grid {
+    gap: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: min(92%, 100% - 28px);
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .stat-card {
+    padding: 14px 8px;
+  }
+
+  .stat-number {
+    font-size: 1.55rem;
+  }
+
+  .lesson-checklist {
+    grid-template-columns: 1fr;
+  }
+
+  .course-item-card {
+    padding: 20px;
+  }
+}
