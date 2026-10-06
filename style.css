@@ -1476,3 +1476,50 @@ textarea:focus {
     page-break-inside: avoid;
   }
 }
+
+/* ===================================================
+   BizBoost Academy Logo
+   =================================================== */
+
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand-logo img {
+  width: 190px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Header logo */
+.site-header .brand-logo img {
+  width: 190px;
+  max-height: 58px;
+}
+
+/* Footer logo */
+.site-footer .brand-logo img {
+  width: 175px;
+  max-height: 65px;
+}
+
+/* Dashboard/sidebar logo */
+.sidebar-brand .brand-logo img {
+  width: 175px;
+  max-height: 60px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .site-header .brand-logo img {
+    width: 150px;
+    max-height: 52px;
+  }
+
+  .site-footer .brand-logo img {
+    width: 155px;
+  }
+}
